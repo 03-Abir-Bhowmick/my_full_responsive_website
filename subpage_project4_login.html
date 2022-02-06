@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cormorant+Garamond:wght@300&family=Lobster&family=Shadows+Into+Light&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cormorant+Garamond:wght@300&family=Lobster&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lobster&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1d5f4f96b8.js" crossorigin="anonymous"></script>
+    <style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .fontstyle2{
+        font-size: 50px;
+        font-family: 'Lobster', cursive;
+        color:chartreuse;
+        text-shadow: 2px 2px 1px black;
+        margin-bottom: 20px;
+    }
+    ::placeholder{
+        font-size: 10px;
+        font-family: 'Lobster', cursive;
+        color:rgb(122, 92, 92);
+    }
+    section{
+        position:relative;
+        width:100%;
+        height:100vh;
+        display:flex;
+    }
+    section .imgbx{
+        position: relative;
+        width:50%;
+        height: 100%;
+    }
+    section .imgbx:before{
+        content:'';
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        background:linear-gradient(225deg,#041cfc,#ff0202);
+        z-index:1;
+        mix-blend-mode: screen;
+    }
+    section .imgbx img{
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        object-fit:cover;
+    }
+    section .contentbx{
+        display: flex;
+        width:50%;
+        height:100%;
+        justify-content: center;
+        align-items: center;
+    }
+    section .contentbx .formbx{
+        width:50%;
+    }
+    section .contentbx .formbx h2{
+        color:#041cfc;
+        font-weight: 600;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        border-bottom: 4px solid #fd0404;
+        display: inline-block;
+        letter-spacing: 1px;
+    }
+    section .contentbx .formbx .inputbx{
+        margin-bottom: 20px;
+    }
+    section .contentbx .formbx .inputbx span{
+        font-size: 16px;
+        margin-bottom: 5px;
+        display: inline-block;
+        color:#0557fc;
+        font-weight: 300;
+        letter-spacing: 1px;
+    }
+    section .contentbx .formbx .inputbx input{
+        width:100%;
+        padding: 10px 20px;
+        outline:none;
+        font-weight: 400;
+        border:1px solid black;
+        font-size: 16px;
+        letter-spacing: 1px;
+        color:rgb(106, 106, 252);
+        background: transparent;
+        border-radius: 30px;
+    }
+    section .contentbx .formbx .inputbx input[type="submit"]
+    {
+        background: red;
+        color:aliceblue;
+        outline:none;
+        border: none;
+        font-weight: 500;
+        cursor:pointer;
+    }
+    section .contentbx .formbx .inputbx input[type="submit"]:hover{
+        background: #0557fc;
+    }
+    section .contentbx .formbx .remember{
+        margin-bottom: 10px;
+        color:rgb(67, 67, 235);
+        font-weight: 400;
+        font-size: 14px;
+    }
+    section .contentbx .formbx .inputbx p{
+        color:#0557fc;
+    }
+    section .contentbx .formbx .inputbx p a{
+        color:#eb1d1d;
+    }
+    section .contentbx .formbx h3{
+        color:blue;
+        text-align: center;
+        margin: 80px 0 10px;
+        font-weight:500;
+    }
+    section .contentbx .formbx .sci{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    section .contentbx .formbx .sci li{
+        list-style: none;
+        font-size: 30px;
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        margin: 0 20px;
+        cursor:pointer;
+    }
+    section .contentbx .formbx .sci li:hover{
+        color:#fd0404;
+    }
+    @media(max-width:1050px)
+    {
+        section .imgbx{
+            position: absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+        }
+        section .contentbx{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            width:100%;
+            height: 100%;
+            z-index: 1;
+        }
+        section .contentbx .formbx{
+            width:100%;
+            padding: 40px;
+            background: rgb(255 255 255 / 0.9);
+            border-radius: 20%;
+            margin:50px;
+        }
+        section .contentbx .formbx h3{
+        color:blue;
+        text-align: center;
+        margin: 30px 0 10px;
+        font-weight:500;
+        }
+    }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="imgbx">
+            <img src="https://images.picxy.com/cache/2021/6/14/081eec5c32e8c8cd23cf749b24846b2f.jpg">
+        </div>
+        <div class="contentbx">
+            <div class="formbx">
+                <h1 class="fontstyle2">Stack Nation</h1>
+                <h2 style="font-family:Arial, Helvetica, sans-serif">login</h2>
+                <form>
+                    <div class="inputbx">
+                        <span style="font-family: 'Lobster', cursive;">Username</span>
+                        <input type="text" name="" placeholder="Your Name Here" required>
+                    </div>
+                    <div class="inputbx">
+                        <span style="font-family: 'Lobster', cursive;">Password</span>
+                        <input type="password" name="" placeholder="Enter Password" required>
+                    </div>
+                    <div class="remember" style="font-family: 'Lobster', cursive;">
+                        <label><input type="checkbox" name="">Remember Me</label>
+                    </div>
+                    <div class="remember" style="font-family: 'Lobster', cursive;">
+                        <label><a href="subpage2_project4_login_signin.html">Forgot Password?</a></label>
+                    </div>
+                    <div class="inputbx" style="font-family: 'Lobster', cursive;">
+                        <input type="Submit" value="Sign In" name="">
+                    </div>
+                    <div class="inputbx" style="font-family: 'Lobster', cursive;">
+                        <p>Don't Have an Account?<a href="subpage2_project4_login_signin.html">Sign Up</a></p>
+                    </div>
+                </form>
+                <h3>Login With Social Media</h3>
+                <ul class="sci">
+                    <li><i class="fab fa-google"></i></li>
+                    <li><i class="fab fa-facebook-square"></i></li>
+                    <li><i class="fab fa-instagram"></i></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
